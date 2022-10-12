@@ -7,10 +7,10 @@ from django.conf import settings
 from django.db.models import F
 from django.utils import timezone
 from django.dispatch import receiver
-from django.utils.encoding import python_2_unicode_compatible
+from django.utils.six import python_2_unicode_compatible
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 AUTH_USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'auth.User')
 
