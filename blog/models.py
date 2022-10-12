@@ -7,7 +7,7 @@ from enumfields import Enum
 from django.conf import settings
 #from django.contrib.auth.models import User
 
-from django.utils.encoding import python_2_unicode_compatible
+from django.utils.six import python_2_unicode_compatible
 from django.contrib.contenttypes.fields import GenericRelation
 from hitcount.models import HitCount, HitCountMixin
 
