@@ -417,6 +417,12 @@ def about_sisu(request):
     }
     
     return render(request, 'blog/about.html', context)
+
+def enp(request):
+    return render(request, 'blog/enp.html')
+
+def mindglow(request):
+    return render(request, 'blog/mindglow.html')
     
 def about_us(request):
     return render(request, 'blog/about-us.html')

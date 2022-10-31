@@ -9,6 +9,8 @@ urlpatterns = [
     # url(r'^$', views.about_sisu, name='about'),
     
     path('about-us/', views.about_us, name='about-us'),
+    path('enp/', views.enp, name='enp'),
+    path('mindglow/', views.mindglow, name='mindglow'),
 
     path('about_us/team', views.about_team, name='about_team'),
     path('about_us/empower_now', views.about_program, name='about_program'),
