@@ -33,6 +33,14 @@
         ]
       }
     </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#emailModal").modal("show");
+      });
+    </script>
 
     <!-- Document title -->
     <title>Home - Sisu VR</title>
@@ -47,6 +55,65 @@
 
   <body>
     <!-- Body Inner -->
+    <div id="emailModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="my-modal-content">
+          <div class="my-modal-top-bar">
+            <button type="button" class="my-modal-button" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="sisu-modal-image">
+            <image src="{% static 'public/assets/img/sisu-email-logo.png' %}">
+            </image>
+          </div>
+          <div class="email-banner">
+            Subscribe to Our<br />
+            Free Newsletter!
+          </div>
+          <div style="width: 100%">
+            <form
+              class="site-search"
+              style="width: 100%"
+              method="POST"
+              action="."
+            >
+              {% csrf_token %}
+              <div
+                style="
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                "
+              >
+                <input
+                  class="my-modal-input"
+                  placeholder="Enter email"
+                  type="text"
+                  name="email_signup"
+                />
+                <span
+                  ><button class="btn modal-btn" type="submit">
+                    Sign up
+                  </button></span
+                >
+              </div>
+              <div>
+                <button
+                  type="button"
+                  class="email-dismiss"
+                  data-dismiss="modal"
+                >
+                  <span>No, Thank you</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="body-inner">
       <!-- Header -->
       <header
