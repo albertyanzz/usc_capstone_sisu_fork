@@ -42,6 +42,12 @@
       });
     </script>
 
+    <script>
+      $("#menu-dropwdown").on("mouseenter", function (e) {
+        $("#sisu-header-bkg:after").css({ "min-height": 150 });
+      });
+    </script>
+
     <!-- Document title -->
     <title>Home - Sisu VR</title>
     <!-- Stylesheets & Fonts -->
@@ -141,22 +147,6 @@
             <!--end: Navigation Resposnive Trigger-->
             <!--Navigation-->
             {% include 'components/new-nav-bar.html' %}
-            <!-- <div id="mainMenu">
-                        <div class="container">
-                            <nav>
-                                <ul id="header-link" class="sisu-header-link-mobile">
-                                    <li><a class="sisu-menu-link-mobile" href="{% url 'home' %}">Home</a></li>
-                                    <li><a class="sisu-menu-link-mobile" href="{% url 'faq' %}">FAQ</a></li>
-                                    <li><a class="sisu-menu-link-mobile" href="{% url 'home' %}#blog">News</a></li>
-                                    <li><a class="sisu-menu-link-mobile" href="{% url 'about-us' %}">About</a></li>
-                                    <li><a class="sisu-menu-link-mobile" href="{% url 'home_portal' %}">Customer
-                                            Portal</a></li>
-                                    <li><a class="sisu-menu-link-mobile" href="{% url 'contact' %}">Contact Sales</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div> -->
             <!--end: Navigation-->
           </div>
         </div>
@@ -894,7 +884,7 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-md-center">
+        <div class="row justify-content-md-center center-container">
           <div class="col-lg-12">
             <h3
               class="text-center"

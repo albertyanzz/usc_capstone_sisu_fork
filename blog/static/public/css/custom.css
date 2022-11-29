@@ -8,6 +8,7 @@
 */
 
 /* USC code start */
+
 .sisu-menu-link-dropdown {
   position: relative;
   display: inline-block;
@@ -30,13 +31,18 @@
   margin-top: -20px;
   /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
   z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(206, 68, 134, 1) 0%,
+    rgba(159, 54, 136, 1) 100%
+  );
 }
 
 /* Links inside the dropdown */
 .sisu-menu-link-dropdown-content a {
   color: #fff;
   padding-left: 10px;
-  font-size: 12px !important;
+  font-size: 16px !important;
   display: block;
 }
 
@@ -73,16 +79,17 @@
 
 .module-link-box {
   color: inherit;
-  font-size: large;
+  font-size: 20px;
   font-weight: 500;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 800px !important;
+  width: 1000px !important;
+  margin-bottom: 30px;
 }
 
 .module-num {
-  width: 100px;
+  width: 150px;
 }
 
 .module-link {
@@ -94,10 +101,15 @@
 .sisu-li li {
   position: relative;
   padding: 10px;
+  font-size: 18px;
 }
 
 .sisu-li li::marker {
   content: url("../assets/img/bullet-point-small.png");
+}
+
+.modal-open {
+  padding-right: 0px !important;
 }
 
 .my-modal-content {
@@ -151,7 +163,7 @@
 
 .email-banner {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 36px;
   line-height: 58px;
   color: white;
   text-shadow: 4px 4px #494949;
@@ -189,10 +201,180 @@
   border: 0;
 }
 
+.footer-banner {
+  font-weight: 600;
+  color: #fff;
+  font-size: 24px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  .mainMenu-open .sisu-header-transparent-bkg {
+    min-height: 150px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(
+      179deg,
+      rgba(159, 54, 136, 1) 0%,
+      rgba(206, 68, 134, 1) 56%,
+      rgba(248, 207, 104, 1) 100%
+    );
+  }
+
+  .mainMenu-open #header #mainMenu {
+    width: calc(100% + 14px);
+    display: block;
+    opacity: 1;
+    overflow-y: hidden !important;
+  }
+
+  .sisu-menu-link-dropdown-content {
+    display: none;
+    position: relative;
+    line-height: 30px;
+    min-width: 300px;
+    text-align: left;
+    margin-top: 0px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+    background: none;
+  }
+
+  .footer-banner {
+    margin-top: 10%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+    overflow: hidden !important;
+  }
+
+  .my-modal-content {
+    height: 436px;
+    width: 295px;
+    background: linear-gradient(
+      0deg,
+      rgba(248, 207, 104, 1),
+      rgba(206, 68, 134, 1),
+      rgba(191, 63, 135, 1)
+    );
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: auto;
+  }
+
+  .my-modal-button {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    font-style: bold;
+    text-align: center;
+    line-height: 22px;
+    border-style: solid;
+    border-radius: 12px;
+    border-width: 2px;
+    border-color: white;
+    color: white;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .sisu-modal-image > img {
+    width: 100px;
+    height: auto;
+  }
+
+  .sisu-modal-image {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .my-modal-button {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    font-style: bold;
+    text-align: center;
+    line-height: 22px;
+    border-style: solid;
+    border-radius: 12px;
+    border-width: 2px;
+    border-color: white;
+    color: white;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .email-banner {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    text-shadow: 4px 4px #494949;
+    margin-bottom: 25px;
+  }
+
+  .my-modal-input {
+    border: 2px solid #000;
+    font-size: 16px;
+    width: 200px !important;
+    height: 30px !important;
+    margin-bottom: 20px;
+  }
+
+  .modal-btn {
+    border: 0 !important;
+    font-size: 18px !important;
+    width: 200px !important;
+    height: 36px !important;
+    text-transform: none !important;
+    background: #d14c84 !important;
+  }
+
+  .email-dismiss {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 14px;
+    color: black;
+    text-shadow: none;
+    border: 0;
+  }
+}
+
 /* USC code end */
 
 .sisu-header-bkg {
-  min-height: 150px;
+  /* min-height: 150px; */
   left: 0px;
   top: 0px;
   background: linear-gradient(
@@ -250,7 +432,7 @@
 }
 
 #footer-lazy-bg {
-  height: 280px;
+  height: auto;
 }
 
 .copyright-text {
@@ -432,7 +614,7 @@
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .footer-content {
     padding-top: 42px;
   }
@@ -467,7 +649,7 @@
   .copyright-text {
     font-size: 8px;
   }
-}
+} */
 
 .blockquote-fancy::before {
   color: #ffb800;
@@ -484,8 +666,8 @@
   margin: 0;
   position: relative;
   top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  /* -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
 }
 
 .team-members .team-member .team-image > img {
@@ -501,7 +683,7 @@
 }
 
 .sisu-menu-link {
-  font-size: 14px !important;
+  font-size: 16px !important;
 }
 
 @media (min-width: 900px) {
@@ -657,7 +839,8 @@
   padding: 2rem 5rem;
   background-color: #fbedfa;
   transition: opacity 1s ease;
-  overflow-y: scroll;
+  overflow-y: hidden;
+  max-width: 100vw;
 }
 
 section.non-relative {
@@ -700,4 +883,10 @@ section.non-relative {
 
 .cookie-consent-banner__cta:last-child {
   margin-left: 16px;
+}
+
+@media (max-width: 900px) {
+  .cookie-consent-banner__cta:last-child {
+    margin-left: 0px !important;
+  }
 }
