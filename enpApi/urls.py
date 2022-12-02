@@ -1,4 +1,4 @@
-from django.urls import include, path
+from django.urls import include, re_path
 from rest_framework import routers
 from . import views
 
@@ -10,9 +10,9 @@ router.register(r'employers', views.EmployerViewSet)
 router.register(r'modules', views.ModulesViewSet)
 
 urlpatterns = [
-    path('api', include(router.urls)),
-    path('employees/', views.login),
-    path('addSession/', views.addSession),
-    path('api-auth/', include('rest_framework.urls',namespace='rest_framework')),
-    path('addEthicalData/', views.addEthicalData),
+    re_path('api', include(router.urls)),
+    re_path('employees/', views.login),
+    re_path('addSession/', views.addSession),
+    re_path('api-auth/', include('rest_framework.urls',namespace='rest_framework')),
+    re_path('addEthicalData/', views.addEthicalData),
 ]
