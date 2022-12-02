@@ -18,7 +18,7 @@ import dj_database_url
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', cast=bool)
 SECURE_SSL_REDIRECT = config('SECURE_SSL_REDIRECT', cast=bool)
-#SECURE_SSL_REDIRECT = False
+SECURE_SSL_REDIRECT = False
 #ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=lambda v: [s.strip() for s in v.split(',')])
 
 #DEBUG = True

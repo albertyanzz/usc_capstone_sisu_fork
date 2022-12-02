@@ -9,6 +9,9 @@ urlpatterns = [
     # url(r'^$', views.about_sisu, name='about'),
     
     re_path('about-us/', views.about_us, name='about-us'),
+    re_path('about-us/', views.about_us, name='about-us'),
+    re_path('enp/', views.enp, name='enp'),
+    re_path('mindglow/', views.mindglow, name='mindglow'),
 
     re_path('about_us/team', views.about_team, name='about_team'),
     re_path('about_us/empower_now', views.about_program, name='about_program'),
