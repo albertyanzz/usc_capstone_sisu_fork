@@ -16,7 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.contrib.auth import views
 from django.contrib.sitemaps.views import sitemap
-from django.conf.urls import include, url, handler400, handler403, handler500
+from django.urls import include, re_path
+from django.conf.urls import handler400, handler403, handler500
 from django.urls import path
 from mysite.sitemaps import StaticViewSitemap
 
@@ -26,7 +27,7 @@ sitemaps = {
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'', include("blog.urls")),
+    re_path(r'', include("blog.urls")),
     path('', include('pages.urls')),
     path('users/', include('users.urls')), # new
     path('users/', include('django.contrib.auth.urls')), # new
@@ -37,7 +38,7 @@ urlpatterns = [
 
 
 # Page Error Handling
-handler400 = 'main.views.handle400'
-handler403 = 'main.views.handle403'
-handler404 = 'main.views.handle404'
-handler500 = 'main.views.handle500'
+# handler400 = 'main.views.handle400'
+# handler403 = 'main.views.handle403'
+# handler404 = 'main.views.handle404'
+# handler500 = 'main.views.handle500'
