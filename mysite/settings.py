@@ -15,10 +15,15 @@ from decouple import config
 import django_heroku 
 import dj_database_url
 
+
+
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', cast=bool)
-SECURE_SSL_REDIRECT = config('SECURE_SSL_REDIRECT', cast=bool)
+# SECURE_SSL_REDIRECT = config('SECURE_SSL_REDIRECT', cast=bool)
 #SECURE_SSL_REDIRECT = False
+SECURE_SSL_REDIRECT=False
+SESSION_COOKIE_SECURE=False
+CSRF_COOKIE_SECURE=False
 #ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=lambda v: [s.strip() for s in v.split(',')])
 
 #DEBUG = True
@@ -192,3 +197,6 @@ django_heroku.settings(locals())
 # Google reCAPTCHA #
 # TODO - move to .env key instead of storing in settings.py file.
 RECAPTCHA_SECRET_KEY = '6Lf4EywbAAAAAOvh_pR5uG_Ds3-iwRLng3xJJ4ln'
+
+
+

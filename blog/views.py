@@ -1,8 +1,9 @@
 from __future__ import unicode_literals
-
+from .models import LinkedinPost, MediumPost
 import sendgrid
 import os, urllib
 import requests, json
+from django.template import loader
 from collections import defaultdict
 from datetime import timedelta
 from sendgrid.helpers.mail import *
@@ -411,6 +412,9 @@ def user_recommendation_list(request):
 #
 # For About us page
 #
+
+
+
 def about_sisu(request):
     context = {
         'signup_form': CustomUserCreationForm()
@@ -1779,6 +1783,32 @@ class IndexView(TemplateView):
           context['formset'] = formset
           
           return context
+def news_view(request, *args, **kwargs): 
+
+
+
+    latest_linked_in_post_list = LinkedinPost.objects.order_by('-pub_date')[:3]
+    latest_medium_post_list = MediumPost.objects.order_by('-pub_date_m')[:4]
+
+    template = loader.get_template('blog/news.html')
+    context = {
+        'latest_linked_in_post_list': latest_linked_in_post_list,
+        'latest_medium_post_list': latest_medium_post_list,
+    }
+    for post in latest_medium_post_list:
+         print(post.m_photo.url)
+
+    return HttpResponse(template.render(context, request))
+
+
+
+
+
+
+
+    return render(request, 'blog/news.html')
+
+
 
 
 def handle400(request, exception):

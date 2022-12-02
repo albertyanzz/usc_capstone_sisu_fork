@@ -7,6 +7,32 @@
 
 */
 
+
+
+/*.sisu-news-frame {
+  align-items: : center;
+  border: 1px solid:
+  border-color: var(--quill-gray);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  min-height: 411px;
+  width: 508px;
+}*/
+
+.sisu-vr-articles{
+  color: #9F3688;
+  /*font-family: "Times New Roman";
+  font-size: 1px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin-right: 1px;
+  margin-top: 29px;
+  min-height: 25px;
+  min-width:195px;
+  white-space: nowrap;*/
+}
 .sisu-header-bkg {
     /* min-height: 99px; */
     left: 0px;
@@ -69,7 +95,15 @@
 #footer .footer-content {
     padding: 42px 0 20px 0;
 }
-
+.new-title{
+    text-align: center; 
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 45px;
+    color: #494949;
+}
 .sisu-hr {
         width: 200px;
         margin-left: auto;
@@ -145,7 +179,7 @@
 
 
 .sisu-color-purple{
-    color: #9F3688;
+    color: #9F3682;
 }
 
 

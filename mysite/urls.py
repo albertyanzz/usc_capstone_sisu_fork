@@ -20,6 +20,8 @@ from django.urls import include, re_path
 from django.conf.urls import handler400, handler403, handler500
 from django.urls import path
 from mysite.sitemaps import StaticViewSitemap
+from django.conf.urls.static import static
+from django.conf import settings
 
 sitemaps = {
     'sitemap': StaticViewSitemap
@@ -35,6 +37,8 @@ urlpatterns = [
     path('', include('enpApi.urls')),  
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
 
 
 # Page Error Handling
