@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 from django.contrib.auth import views as auth_views
+
 #from .views import IndexView
 
 urlpatterns = [
@@ -84,6 +85,7 @@ urlpatterns = [
     path('portal/certificate/', views.portal_certificate, name='certificate'),
     path('portal/change_pwd/', views.portal_change_password, name='portal_pwd'),
     # Training Portal - END
+    path('news', views.news_view, name='news'),
 
     # PASSWORD RECOVERY URLS ARE IN users/urls.py
 

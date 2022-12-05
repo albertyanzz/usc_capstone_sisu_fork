@@ -15,10 +15,15 @@ from decouple import config
 import django_heroku 
 import dj_database_url
 
+
+
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', cast=bool)
-SECURE_SSL_REDIRECT = config('SECURE_SSL_REDIRECT', cast=bool)
-SECURE_SSL_REDIRECT = False
+# SECURE_SSL_REDIRECT = config('SECURE_SSL_REDIRECT', cast=bool)
+#SECURE_SSL_REDIRECT = False
+SECURE_SSL_REDIRECT=False
+SESSION_COOKIE_SECURE=False
+CSRF_COOKIE_SECURE=False
 #ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=lambda v: [s.strip() for s in v.split(',')])
 
 #DEBUG = True
@@ -26,6 +31,10 @@ ALLOWED_HOSTS = ['127.0.0.1', 'sisu-test-release.herokuapp', 'sisuvr']
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+MEDIA_ROOT = ''
+MEDIA_URL = ''
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
@@ -192,3 +201,6 @@ django_heroku.settings(locals())
 # Google reCAPTCHA #
 # TODO - move to .env key instead of storing in settings.py file.
 RECAPTCHA_SECRET_KEY = '6Lf4EywbAAAAAOvh_pR5uG_Ds3-iwRLng3xJJ4ln'
+
+
+
