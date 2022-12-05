@@ -75,7 +75,7 @@
       </header>
       <!-- end: Header -->
 
-      <div style="padding-top: 100px">
+      <div>
         <div class="container">
           <div class="sisu-divider-line text-center">
             <h3
@@ -101,9 +101,9 @@
               allowfullscreen
             ></iframe>
           </div>
-          <img id="expandedImg" style="width: 100%" />
+          <img id="expandedImg" style="display: none; width: 100%" />
         </div>
-        <div class="container center-container">
+        <div class="container center-container" style="margin-top: 30px">
           <div class="row">
             <div class="column-lg-3">
               <img
@@ -114,7 +114,7 @@
                 onclick="galleryVideo(this)"
               />
             </div>
-            <div class="column-lg-3">
+            <!-- <div class="column-lg-3">
               <img
                 src="{% static 'public/assets/img/enp-thumbnail-1.png' %}"
                 class="img-fluid rounded"
@@ -140,7 +140,7 @@
                 style="width: 200px; height: auto"
                 onclick="galleryFunction(this)"
               />
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -361,22 +361,26 @@
             Got questions? Want a free demo? Curious about the pricing?
           </h3>
         </div>
-        <button
-          style="
-            font-size: 16px;
-            margin-top: 24px;
-            margin-bottom: 24px;
-            border-radius: 30px;
-            height: 64px;
-            width: 200px;
-          "
-          type="button"
-          class="btn btn-sisu-primary"
-        >
-          <a href="{% url 'contact' %}" style="color: #fff !important">
-            Contact Us
-          </a>
-        </button>
+        <div class="col-lg-12">
+          <div class="center-container">
+            <button
+              style="
+                font-size: 16px;
+                margin-top: 24px;
+                margin-bottom: 24px;
+                border-radius: 30px;
+                height: 64px;
+                width: 200px;
+              "
+              type="button"
+              class="btn btn-sisu-primary"
+            >
+              <a href="{% url 'contact' %}" style="color: #fff !important">
+                Contact Us
+              </a>
+            </button>
+          </div>
+        </div>
       </div>
 
       <div class="container" style="padding-top: 64px">
@@ -396,117 +400,120 @@
           ></div>
         </div>
         <div class="row">
-          <div class="col-lg-5">
-            <!-- <h2>Rounded</h2> -->
-            <!-- <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p> -->
-            <img
-              src="{% static 'public/assets/img/enp-image-1.jpg' %}"
-              class="img-fluid rounded"
-              alt="Two women sitting facing towards each other and looking at something on a table in front of them."
-              style="width: 476px; height: auto"
-            />
-            <div
-              class="bg-cube-element"
-              style="
-                width: 156px;
-                height: 102px;
-                margin-top: -80px;
-                margin-left: -28px;
-              "
-            ></div>
-          </div>
-          <div class="col-lg-7">
-            <h3
-              id="learn-more"
-              style="
-                font-weight: 600;
-                color: #494949;
-                animation-duration: 100ms;
-              "
-            >
-              Experience real cases through
-              <span class="sisu-color-purple">
-                multiple first-person perspectives.</span
-              >
-            </h3>
-            <ul class="sisu-li">
-              <li>
-                Learn how to handle realistic situations as a victim, offender,
-                or observer
-              </li>
-              <li>Undergo outcomes in a fail-safe, fail-fast environment</li>
-              <li>
-                Analyze how your actions may affect your circumstances--for
-                better or worse
-              </li>
-            </ul>
-            <div
-              class="bg-cube-container"
-              style="float: right; margin-right: 48%"
-            >
-              <div
-                class="bg-cube-element"
-                style="width: 56px; height: 36px; margin-top: 18%"
-              ></div>
-            </div>
-            <!-- <img src="images/other/550x240.png" class="img-fluid rounded" alt=""> -->
-          </div>
-          <hr class="space" />
-          <div class="col-lg-7">
-            <h3
-              id="learn-more"
-              style="
-                font-weight: 600;
-                color: #494949;
-                animation-duration: 100ms;
-              "
-            >
-              Evaluate your results with an evidence-based
-              <span class="sisu-color-purple">Ethical Framework</span>
-            </h3>
-            <ul class="sisu-li">
-              <li>
-                Track employee progress and obtain critical data on
-                organizational performance
-              </li>
-              <li>
-                Generate reports on how to create a more inclusive workplace
-              </li>
-              <li>Reinforce courage, kindness, and respect</li>
-            </ul>
-            <div
-              class="bg-cube-container"
-              style="float: right; margin-right: 48%"
-            >
-              <div
-                class="bg-cube-element"
-                style="width: 56px; height: 36px; margin-top: 18%"
-              ></div>
-            </div>
-            <!-- <img src="images/other/550x240.png" class="img-fluid rounded" alt=""> -->
-          </div>
-          <div class="col-lg-5">
-            <!-- <h2>Rounded</h2> -->
-            <!-- <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p> -->
-            <div style="width: 476px; height: 400px; overflow: hidden">
+          <div class="row-wrapper-alt">
+            <div class="col-lg-5">
+              <!-- <h2>Rounded</h2> -->
+              <!-- <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p> -->
               <img
-                src="{% static 'public/assets/img/enp-image-2.jpg' %}"
+                src="{% static 'public/assets/img/enp-image-1.jpg' %}"
                 class="img-fluid rounded"
                 alt="Two women sitting facing towards each other and looking at something on a table in front of them."
-                style="margin-top: -120px"
+                style="width: 476px; height: auto"
               />
+              <div
+                class="bg-cube-element"
+                style="
+                  width: 156px;
+                  height: 102px;
+                  margin-top: -80px;
+                  margin-left: -28px;
+                "
+              ></div>
             </div>
-            <div
-              class="bg-cube-element"
-              style="
-                width: 156px;
-                height: 102px;
-                margin-top: -80px;
-                margin-left: -28px;
-              "
-            ></div>
+            <div class="col-lg-7">
+              <h3
+                id="learn-more"
+                style="
+                  font-weight: 600;
+                  color: #494949;
+                  animation-duration: 100ms;
+                "
+              >
+                Experience real cases through
+                <span class="sisu-color-purple">
+                  multiple first-person perspectives.</span
+                >
+              </h3>
+              <ul class="sisu-li">
+                <li>
+                  Learn how to handle realistic situations as a victim,
+                  offender, or observer
+                </li>
+                <li>Undergo outcomes in a fail-safe, fail-fast environment</li>
+                <li>
+                  Analyze how your actions may affect your circumstances--for
+                  better or worse
+                </li>
+              </ul>
+              <div
+                class="bg-cube-container"
+                style="float: right; margin-right: 48%"
+              >
+                <div
+                  class="bg-cube-element"
+                  style="width: 56px; height: 36px; margin-top: 18%"
+                ></div>
+              </div>
+              <!-- <img src="images/other/550x240.png" class="img-fluid rounded" alt=""> -->
+            </div>
           </div>
-
+          <hr class="space" />
+          <div class="row-wrapper">
+            <div class="col-lg-7">
+              <h3
+                id="learn-more"
+                style="
+                  font-weight: 600;
+                  color: #494949;
+                  animation-duration: 100ms;
+                "
+              >
+                Evaluate your results with an evidence-based
+                <span class="sisu-color-purple">Ethical Framework</span>
+              </h3>
+              <ul class="sisu-li">
+                <li>
+                  Track employee progress and obtain critical data on
+                  organizational performance
+                </li>
+                <li>
+                  Generate reports on how to create a more inclusive workplace
+                </li>
+                <li>Reinforce courage, kindness, and respect</li>
+              </ul>
+              <div
+                class="bg-cube-container"
+                style="float: right; margin-right: 48%"
+              >
+                <div
+                  class="bg-cube-element"
+                  style="width: 56px; height: 36px; margin-top: 18%"
+                ></div>
+              </div>
+              <!-- <img src="images/other/550x240.png" class="img-fluid rounded" alt=""> -->
+            </div>
+            <div class="col-lg-5">
+              <!-- <h2>Rounded</h2> -->
+              <!-- <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p> -->
+              <div style="width: 476px; height: 400px; overflow: hidden">
+                <img
+                  src="{% static 'public/assets/img/enp-image-2.jpg' %}"
+                  class="img-fluid rounded"
+                  alt="Two women sitting facing towards each other and looking at something on a table in front of them."
+                  style="margin-top: -120px"
+                />
+              </div>
+              <div
+                class="bg-cube-element"
+                style="
+                  width: 156px;
+                  height: 102px;
+                  margin-top: -80px;
+                  margin-left: -28px;
+                "
+              ></div>
+            </div>
+          </div>
           <hr class="space" />
         </div>
       </div>
@@ -522,8 +529,8 @@
           <div class="col-lg-12 center-container">
             <div class="module-link-box">
               <div class="module-num">Module 1</div>
-              <div>
-                <a href="" class="module-link"
+              <div class="module-link">
+                <a href="" style="color: inherit"
                   >Sexual Harassment, Hostile Work Environment</a
                 >
               </div>
@@ -532,8 +539,8 @@
           <div class="col-lg-12 center-container">
             <div class="module-link-box">
               <div class="module-num">Module 2</div>
-              <div>
-                <a href="" class="module-link"
+              <div class="module-link">
+                <a href="" style="color: inherit"
                   >Sexual Orientation, Gender Identity, Quid Pro Quo</a
                 >
               </div>
@@ -542,8 +549,8 @@
           <div class="col-lg-12 center-container">
             <div class="module-link-box">
               <div class="module-num">Module 3</div>
-              <div>
-                <a href="" class="module-link"
+              <div class="module-link">
+                <a href="" style="color: inherit"
                   >Bullying, How to Give Feedback</a
                 >
               </div>
@@ -552,8 +559,8 @@
           <div class="col-lg-12 center-container">
             <div class="module-link-box">
               <div class="module-num">Module 4</div>
-              <div>
-                <a href="" class="module-link"
+              <div class="module-link">
+                <a href="" style="color: inherit"
                   >Gender Expression, Discrimination, Sexual Harassment</a
                 >
               </div>
@@ -686,22 +693,26 @@
           Got questions? Want a free demo? Curious about the pricing?
         </h3>
       </div>
-      <button
-        style="
-          font-size: 16px;
-          margin-top: 24px;
-          margin-bottom: 24px;
-          border-radius: 30px;
-          height: 64px;
-          width: 200px;
-        "
-        type="button"
-        class="btn btn-sisu-primary"
-      >
-        <a href="{% url 'contact' %}" style="color: #fff !important">
-          Contact Us
-        </a>
-      </button>
+      <div class="col-lg-12">
+        <div class="center-container">
+          <button
+            style="
+              font-size: 16px;
+              margin-top: 24px;
+              margin-bottom: 24px;
+              border-radius: 30px;
+              height: 64px;
+              width: 200px;
+            "
+            type="button"
+            class="btn btn-sisu-primary"
+          >
+            <a href="{% url 'contact' %}" style="color: #fff !important">
+              Contact Us
+            </a>
+          </button>
+        </div>
+      </div>
     </div>
 
     <!-- Cookies -->

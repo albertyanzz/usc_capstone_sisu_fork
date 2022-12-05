@@ -163,7 +163,7 @@
           class="slide"
           data-bg-image="{% static 'public/assets/img/sisu-landing-bg-3.png' %}"
         >
-          <div
+          <!-- <div
             class="shape-divider"
             data-style="12"
             style="z-index: 0; opacity: 1"
@@ -179,7 +179,7 @@
                 style="fill: #fff"
               ></path>
             </svg>
-          </div>
+          </div> -->
           <div class="container">
             <div class="slide-captions text-left text-light">
               <!-- Captions -->
@@ -241,128 +241,133 @@
           ></div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
-            <h3
-              id="learn-more"
-              style="
-                font-weight: 600;
-                color: #494949;
-                animation-duration: 100ms;
-              "
-            >
-              Did you know
-              <span class="sisu-color-purple">one in two women</span> has or
-              will face workplace harassment?
-            </h3>
-            <p style="font-size: 16px">
-              And 90% of workers have been bullied. Harassment, discrimination,
-              and bullying have profound psychological effects, including
-              decreased productivity, and increased turnover and lawsuits.
-              What's more alarming is 30% of workers do not know how to handle
-              bad behavior.
-            </p>
-            <p>
-              Source:
-              <a
-                href="https://hbr.org/2020/10/do-your-employees-feel-safe-reporting-abuse-and-discrimination"
-                class="sisu-color-purple"
-                style="text-decoration: underline"
+          <div class="row-wrapper">
+            <div class="col-lg-6">
+              <h3
+                id="learn-more"
+                style="
+                  font-weight: 600;
+                  color: #494949;
+                  animation-duration: 100ms;
+                "
               >
-                Harvard Business Review</a
-              >
-            </p>
+                Did you know
+                <span class="sisu-color-purple">one in two women</span> has or
+                will face workplace harassment?
+              </h3>
+              <p style="font-size: 16px">
+                And 90% of workers have been bullied. Harassment,
+                discrimination, and bullying have profound psychological
+                effects, including decreased productivity, and increased
+                turnover and lawsuits. What's more alarming is 30% of workers do
+                not know how to handle bad behavior.
+              </p>
+              <p>
+                Source:
+                <a
+                  href="https://hbr.org/2020/10/do-your-employees-feel-safe-reporting-abuse-and-discrimination"
+                  class="sisu-color-purple"
+                  style="text-decoration: underline"
+                >
+                  Harvard Business Review</a
+                >
+              </p>
 
-            <div
-              class="bg-cube-container"
-              style="float: right; margin-right: 48%"
-            >
+              <div
+                class="bg-cube-container"
+                style="float: right; margin-right: 48%"
+              >
+                <div
+                  class="bg-cube-element"
+                  style="width: 56px; height: 36px; margin-top: 18%"
+                ></div>
+              </div>
+              <!-- <img src="images/other/550x240.png" class="img-fluid rounded" alt=""> -->
+            </div>
+            <div class="col-lg-6">
+              <!-- <h2>Rounded</h2> -->
+              <!-- <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p> -->
+              <img
+                src="{% static 'public/assets/img/featured-01-alt.jpg' %}"
+                class="img-fluid rounded"
+                alt="Two women sitting at a table."
+                style="width: 476px; height: auto"
+              />
               <div
                 class="bg-cube-element"
-                style="width: 56px; height: 36px; margin-top: 18%"
+                style="
+                  width: 156px;
+                  height: 102px;
+                  margin-top: -80px;
+                  margin-left: -28px;
+                "
               ></div>
             </div>
-            <!-- <img src="images/other/550x240.png" class="img-fluid rounded" alt=""> -->
           </div>
-          <div class="col-lg-6">
-            <!-- <h2>Rounded</h2> -->
-            <!-- <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p> -->
-            <img
-              src="{% static 'public/assets/img/featured-01-alt.jpg' %}"
-              class="img-fluid rounded"
-              alt="Two women sitting facing towards each other and looking at something on a table in front of them."
-              style="width: 476px; height: auto"
-            />
-            <div
-              class="bg-cube-element"
-              style="
-                width: 156px;
-                height: 102px;
-                margin-top: -80px;
-                margin-left: -28px;
-              "
-            ></div>
-          </div>
+
           <hr class="space" />
-          <div class="col-lg-6">
-            <!-- <h2>Rounded</h2> -->
-            <!-- <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p> -->
-            <img
-              src="{% static 'public/assets/img/featured-02-alt.jpg' %}"
-              class="img-fluid rounded"
-              alt="Two women sitting facing towards each other and looking at something on a table in front of them."
-              style="width: 476px; height: auto"
-            />
-            <div
-              class="bg-cube-element"
-              style="
-                width: 156px;
-                height: 102px;
-                margin-top: -80px;
-                margin-left: -28px;
-              "
-            ></div>
-          </div>
-          <div class="col-lg-6">
-            <h3
-              id="learn-more"
-              style="
-                font-weight: 600;
-                color: #494949;
-                animation-duration: 100ms;
-              "
-            >
-              <span class="sisu-color-purple">
-                20,050 injuries and 392 fatalities</span
-              >
-              have occurred as a result of workplace violence in 2020.
-            </h3>
-            <p style="font-size: 16px">
-              The deadliest situations involve an active shooter. 80% of active
-              shooter incidents occur in the workplace, and 25% of companies are
-              unprepared for active shooter incidents. <br />Don’t let your
-              company be one of them.
-            </p>
-            <p>
-              Source:
-              <!-- TODO: get link -->
-              <a
-                href=""
-                class="sisu-color-purple"
-                style="text-decoration: underline"
-              >
-                Active Shooter Plan Report
-              </a>
-            </p>
-            <div
-              class="bg-cube-container"
-              style="float: right; margin-right: 48%"
-            >
+          <div class="row-wrapper-alt">
+            <div class="col-lg-6">
+              <!-- <h2>Rounded</h2> -->
+              <!-- <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p> -->
+              <img
+                src="{% static 'public/assets/img/featured-02-alt.jpg' %}"
+                class="img-fluid rounded"
+                alt="Firearm on table."
+                style="width: 476px; height: auto"
+              />
               <div
                 class="bg-cube-element"
-                style="width: 56px; height: 36px; margin-top: 18%"
+                style="
+                  width: 156px;
+                  height: 102px;
+                  margin-top: -80px;
+                  margin-left: -28px;
+                "
               ></div>
             </div>
-            <!-- <img src="images/other/550x240.png" class="img-fluid rounded" alt=""> -->
+            <div class="col-lg-6">
+              <h3
+                id="learn-more"
+                style="
+                  font-weight: 600;
+                  color: #494949;
+                  animation-duration: 100ms;
+                "
+              >
+                <span class="sisu-color-purple">
+                  20,050 injuries and 392 fatalities</span
+                >
+                have occurred as a result of workplace violence in 2020.
+              </h3>
+              <p style="font-size: 16px">
+                The deadliest situations involve an active shooter. 80% of
+                active shooter incidents occur in the workplace, and 25% of
+                companies are unprepared for active shooter incidents.
+                <br />Don’t let your company be one of them.
+              </p>
+              <p>
+                Source:
+                <!-- TODO: get link -->
+                <a
+                  href=""
+                  class="sisu-color-purple"
+                  style="text-decoration: underline"
+                >
+                  Active Shooter Plan Report
+                </a>
+              </p>
+              <div
+                class="bg-cube-container"
+                style="float: right; margin-right: 48%"
+              >
+                <div
+                  class="bg-cube-element"
+                  style="width: 56px; height: 36px; margin-top: 18%"
+                ></div>
+              </div>
+              <!-- <img src="images/other/550x240.png" class="img-fluid rounded" alt=""> -->
+            </div>
           </div>
           <hr class="space" />
           <div class="col-lg-2">
@@ -419,117 +424,121 @@
             ></div>
           </div>
           <hr class="space" />
-
-          <div class="col-lg-6">
-            <div
-              class="bg-cube-container"
-              style="float: left; margin-right: 0%"
-            >
+          <div class="row-wrapper">
+            <div class="col-lg-6">
               <div
-                class="bg-cube-element"
-                style="
-                  width: 26px;
-                  height: 18px;
-                  margin-top: 34%;
-                  margin-left: 80px;
-                "
-              ></div>
+                class="bg-cube-container"
+                style="float: left; margin-right: 0%"
+              >
+                <div
+                  class="bg-cube-element"
+                  style="
+                    width: 26px;
+                    height: 18px;
+                    margin-top: 34%;
+                    margin-left: 80px;
+                  "
+                ></div>
+              </div>
+              <h3 style="font-weight: 600; color: #494949">
+                Immersive training using<br /><span class="sisu-color-purple"
+                  >virtual reality (VR)</span
+                >
+              </h3>
+              <p style="font-size: 16px">
+                Studies show virtual reality (VR) training raises retention and
+                empathy. VR learners were 4x faster to train that in the
+                classroom, 275% more confident to apply their skills they
+                learned, 3.75x more emotionally connected to the content than
+                classroom learners, and 4x more focused than their e-learning
+                peers <br />
+              </p>
+
+              <p>
+                Source:
+                <a
+                  href="https://sisuvr.medium.com/increase-user-retention-comprehension-and-empathy-using-virtual-reality-training-7099a470e1f1"
+                  class="sisu-color-purple"
+                  style="text-decoration: underline"
+                >
+                  PWC Soft Skills Study, 2020</a
+                >
+              </p>
             </div>
-            <h3 style="font-weight: 600; color: #494949">
-              Immersive training using<br /><span class="sisu-color-purple"
-                >virtual reality (VR)</span
-              >
-            </h3>
-            <p style="font-size: 16px">
-              Studies show virtual reality (VR) training raises retention and
-              empathy. VR learners were 4x faster to train that in the
-              classroom, 275% more confident to apply their skills they learned,
-              3.75x more emotionally connected to the content than classroom
-              learners, and 4x more focused than their e-learning peers <br />
-            </p>
-
-            <p>
-              Source:
-              <a
-                href="https://sisuvr.medium.com/increase-user-retention-comprehension-and-empathy-using-virtual-reality-training-7099a470e1f1"
-                class="sisu-color-purple"
-                style="text-decoration: underline"
-              >
-                PWC Soft Skills Study, 2020</a
-              >
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <!-- <h2>Rounded</h2> -->
-            <!-- <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p> -->
-            <img
-              src="{% static 'public/assets/img/featured-03-alt.jpg' %}"
-              class="img-fluid rounded"
-              alt=""
-              style="width: 476px; height: autopx"
-            />
-            <div
-              class="bg-cube-container"
-              style="float: left; margin-right: 0%"
-            >
+            <div class="col-lg-6">
+              <!-- <h2>Rounded</h2> -->
+              <!-- <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p> -->
+              <img
+                src="{% static 'public/assets/img/featured-03-alt.jpg' %}"
+                class="img-fluid rounded"
+                alt="Woman putting on vr headset."
+                style="width: 476px; height: autopx"
+              />
               <div
-                class="bg-cube-element"
-                style="
-                  width: 226px;
-                  height: 186px;
-                  margin-top: 32%;
-                  margin-left: -24px;
-                "
-              ></div>
+                class="bg-cube-container"
+                style="float: left; margin-right: 0%"
+              >
+                <div
+                  class="bg-cube-element"
+                  style="
+                    width: 226px;
+                    height: 186px;
+                    margin-top: 32%;
+                    margin-left: -24px;
+                  "
+                ></div>
+              </div>
             </div>
           </div>
 
           <hr class="space" />
-          <div class="col-lg-6">
-            <!-- <h2>Rounded</h2> -->
-            <!-- <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p> -->
-            <img
-              src="{% static 'public/assets/img/featured-04-alt.jpg' %}"
-              class="img-fluid rounded"
-              alt="Four colleagues having a discussion in a meeting room."
-              style="width: 476px; height: auto"
-            />
-          </div>
-          <div class="col-lg-6">
-            <h3 style="font-weight: 600; color: #494949">
-              Hands-on
-              <span class="sisu-color-purple">interactive simulations</span>.
-            </h3>
-            <p style="font-size: 16px">
-              How many of your employees are distracted or lack engagement
-              during mandatory trainings? Our VR trainings eliminate
-              distractions and lets employees learn by engaging in our
-              simulations. Sisu VR’s trainings will make your employees excited
-              to take workplace safety trainings!
-            </p>
-            <!-- <img src="images/other/550x240.png" class="img-fluid rounded" alt=""> -->
-            <div
-              class="bg-cube-container"
-              style="float: right; margin-right: 0%"
-            >
-              <div
-                class="bg-cube-element"
-                style="width: 56px; height: 36px; margin-top: 0%"
-              ></div>
+          <div class="row-wrapper-alt">
+            <div class="col-lg-6">
+              <!-- <h2>Rounded</h2> -->
+              <!-- <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p> -->
+              <img
+                src="{% static 'public/assets/img/featured-04-alt.jpg' %}"
+                class="img-fluid rounded"
+                alt="Man holding VR headset."
+                style="width: 476px; height: auto"
+              />
             </div>
-            <div
-              class="bg-cube-container"
-              style="float: left; margin-right: 0%"
-            >
+            <div class="col-lg-6">
+              <h3 style="font-weight: 600; color: #494949">
+                Hands-on
+                <span class="sisu-color-purple">interactive simulations</span>.
+              </h3>
+              <p style="font-size: 16px">
+                How many of your employees are distracted or lack engagement
+                during mandatory trainings? Our VR trainings eliminate
+                distractions and lets employees learn by engaging in our
+                simulations. Sisu VR’s trainings will make your employees
+                excited to take workplace safety trainings!
+              </p>
+              <!-- <img src="images/other/550x240.png" class="img-fluid rounded" alt=""> -->
               <div
-                class="bg-cube-element"
-                style="
-                  width: 26px;
-                  height: 18px;
-                  margin-top: 34%;
-                  margin-left: 80px;
-                "
-              ></div>
+                class="bg-cube-container"
+                style="float: right; margin-right: 0%"
+              >
+                <div
+                  class="bg-cube-element"
+                  style="width: 56px; height: 36px; margin-top: 0%"
+                ></div>
+              </div>
+              <div
+                class="bg-cube-container"
+                style="float: left; margin-right: 0%"
+              >
+                <div
+                  class="bg-cube-element"
+                  style="
+                    width: 26px;
+                    height: 18px;
+                    margin-top: 34%;
+                    margin-left: 80px;
+                  "
+                ></div>
+              </div>
             </div>
           </div>
 
@@ -558,7 +567,7 @@
                   alt="..."
                   style="height: 55%"
                 />
-                <div class="card-body">
+                <div class="card-body sisu-card-body">
                   <span
                     class="card-text sisu-color-purple"
                     style="font-weight: bold"
@@ -570,7 +579,7 @@
                     employees and supervisors
                   </p>
                   <a
-                    href="{% url 'about-us' %}"
+                    href="{% url 'enp' %}"
                     class="card-text"
                     style="color: #ec7f00"
                     >Learn More</a
@@ -589,7 +598,7 @@
                   alt="..."
                   style="height: 55%"
                 />
-                <div class="card-body">
+                <div class="card-body sisu-card-body">
                   <span
                     class="card-text sisu-color-purple"
                     style="font-weight: bold"
@@ -600,7 +609,7 @@
                     for students and employees
                   </p>
                   <a
-                    href="{% url 'about-us' %}"
+                    href="{% url 'mindglow' %}"
                     class="card-text"
                     style="color: #ec7f00"
                     >Learn More</a
@@ -733,47 +742,7 @@
           >&#10095;</a
         >
       </div>
-
-      <!-- The dots/circles -->
-      <!-- <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
-            </div>
-            <br><br><br><br><br><br> -->
     </div>
-
-    <!-- <section data-bg-image="{% static 'public/assets/img/featured-05.png' %}"
-            style="height: 364px; background-image: url(&quot;{% static 'public/assets/img/divider-curved-01.png' %}&quot;);"
-            class="lazy-bg bg-loaded" data-bg="{% static 'public/assets/img/divider-curved-01.png' %}"
-            data-ll-status="loaded">
-            <div class="grid-system-demo-live vertical-center">
-                <div class="row row align-items-center">
-                    <div class="col-lg-12 text-center">
-                        <h3 class="text-center" style="font-weight: 600; color:#fff; font-size: 24px">Stay updated
-                            with
-                            our free newsletter!</h3>
-                        <div style=" justify-content: center; display: flex;">
-
-                            <form class="site-search" method="POST" action=".">
-                                {% csrf_token %}
-                                <div class="input-group">
-                                    <input class="form-control"
-                                        style="border: 0px solid #ced4da; font-size: 16px; width: 346px"
-                                        placeholder="Email address" type="text" name="email_signup">
-                                    <span><button class="btn btn-sisu-primary"
-                                            style="border-radius: 0px 4px 4px 0px; border: 1px solid #ced4da; font-size: 16px"
-                                            type="submit"> Sign up</button></span>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
     <section class="non-relative" style="margin-top: -250px">
       <div class="container">
@@ -911,233 +880,6 @@
             </a>
           </button>
         </div>
-
-        <!--
-                <div class="heading-text heading-line text-center">
-                    <div class="bg-cube-container" style="float: left; margin-right: 0%;">
-                        <div class="bg-cube-element" style="width:42px; height:28px; margin-top:0%; margin-left:80px">
-                        </div>
-                    </div>
-                    <h4 id="blog">What's Happening at Sisu VR?</h4>
-                </div>
-            
-
-                <div class="mobile-hide">
-                    <div class="row team-members team-members-shadow m-b-40">
-                        <div class="col-lg-3">
-                            <div class="team-member">
-                                <div class="team-image">
-                                    <img
-                                        src="{% static 'public/assets/img/blog-new-sexual-harassment-prevention.png' %}">
-                                </div>
-                                <div class="team-desc">
-                                    <h3>New Sexual Harassment Prevention Training</h3>
-                                    <p>Requirement that employees must take be provided and take anti-sexual
-                                        harassment
-                                        training.</p>
-                                    <button type="button" class="btn btn-sisu-primary"><a
-                                            href="https://sisuvr.medium.com/new-sexual-harassment-prevention-training-guidelines-for-california-businesses-in-the-new-year-133be7ec3a3f"
-                                            target="_blank" style="color:#fff">Read more</a></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="team-member">
-                                <div class="team-image">
-                                    <img
-                                        src="{% static 'public/assets/img/blog-increase-user-retention-comprehension.png' %}" alt="Sisu VR training response to a virtual scenario. Potential response #1 'What do you care, Ruben? You're quitting anyway. Get lost.' Potential response #2 'I think it wouldn't hurt to take another look at the assumptions.' Potential response #3 'He's right. You inherited a done deal. Don't screw it up.'">
-                                </div>
-                                <div class="team-desc">
-                                    <h3>Increase User Retention and Comprehension</h3>
-                                    <p>VR technology has increased benefits compared to traditional training videos.
-                                    </p>
-                                    <button type="button" class="btn btn-sisu-primary"><a
-                                            href="https://sisuvr.medium.com/increase-user-retention-comprehension-and-empathy-using-virtual-reality-training-7099a470e1f1"
-                                            target="_blank" style="color:#fff">Read more</a></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="team-member">
-                                <div class="team-image">
-                                    <img src="{% static 'public/assets/img/blog-cover-01.png' %}">
-                                </div>
-                                <div class="team-desc">
-                                    <h3>VR Productivity Apps to Try</h3>
-                                    <p>Whether you are a small or large enterprise, VR applications increase.</p>
-                                    <button type="button" class="btn btn-sisu-primary"><a
-                                            href="https://sisuvr.medium.com/the-future-of-work-is-now-vr-productivity-apps-to-try-out-3c894290df8e"
-                                            target="_blank" style="color:#fff">Read more</a></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="team-member">
-                                <div class="team-image">
-                                    <img src="{% static 'public/assets/img/blog-cover-03.png' %}">
-                                </div>
-                                <div class="team-desc">
-                                    <h3>Virtual Morality</h3>
-                                    <p>Santa Clara Magazine features Sisu VR as an ethical approach to compliance
-                                        training.</p>
-                                    <button type="button" class="btn btn-sisu-primary"><a
-                                            href="https://magazine.scu.edu/magazines/spring-2020/virtual-morality/"
-                                            target="_blank" style="color:#fff">Read more</a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                -->
-
-        <div class="mobile-show">
-          <div class="carousel" data-items="4">
-            <!-- Post item-->
-            <div class="post-item border">
-              <div class="post-item-wrap">
-                <div class="post-image">
-                  <a href="#">
-                    <img
-                      alt=""
-                      src="{% static 'public/assets/img/blog-new-sexual-harassment-prevention.png' %}"
-                  /></a>
-                </div>
-                <div class="post-item-description">
-                  <span class="post-meta-date"
-                    ><i class="fa fa-calendar-o"></i>Jan 21, 2017</span
-                  >
-                  <h2>
-                    <a href="#">New Sexual Harassment Prevention Training</a>
-                  </h2>
-                  <p>
-                    Requirement that employees must take be provided and take
-                    anti-sexual harassment training.
-                  </p>
-
-                  <button
-                    type="button"
-                    class="btn btn-rounded btn-sisu-primary"
-                  >
-                    <a
-                      href="https://sisuvr.medium.com/new-sexual-harassment-prevention-training-guidelines-for-california-businesses-in-the-new-year-133be7ec3a3f"
-                      target="_blank"
-                      style="color: #fff"
-                      >Read more</a
-                    >
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- end: Post item-->
-            <!-- Post item-->
-            <div class="post-item border">
-              <div class="post-item-wrap">
-                <div class="post-image">
-                  <a href="#">
-                    <img
-                      alt=""
-                      src="{% static 'public/assets/img/blog-increase-user-retention-comprehension.png' %}"
-                  /></a>
-                </div>
-                <div class="post-item-description">
-                  <span class="post-meta-date"
-                    ><i class="fa fa-calendar-o"></i>Jan 21, 2017</span
-                  >
-                  <h2>
-                    <a href="#">Increase User Retention and Comprehension</a>
-                  </h2>
-                  <p>
-                    VR technology has increased benefits compared to traditional
-                    training videos.
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-rounded btn-sisu-primary"
-                  >
-                    <a
-                      href="https://sisuvr.medium.com/new-sexual-harassment-prevention-training-guidelines-for-california-businesses-in-the-new-year-133be7ec3a3f"
-                      target="_blank"
-                      style="color: #fff"
-                      >Read more</a
-                    >
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- end: Post item-->
-
-            <!-- Post item-->
-            <div class="post-item border">
-              <div class="post-item-wrap">
-                <div class="post-image">
-                  <a href="#">
-                    <img
-                      alt=""
-                      src="{% static 'public/assets/img/blog-cover-01.png' %}"
-                  /></a>
-                </div>
-                <div class="post-item-description">
-                  <span class="post-meta-date"
-                    ><i class="fa fa-calendar-o"></i>Jan 21, 2017</span
-                  >
-                  <h2><a href="#">VR Productivity Apps to Try</a></h2>
-                  <p>
-                    Whether you are a small or large enterprise, VR applications
-                    increase.
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-rounded btn-sisu-primary"
-                  >
-                    <a
-                      href="https://sisuvr.medium.com/new-sexual-harassment-prevention-training-guidelines-for-california-businesses-in-the-new-year-133be7ec3a3f"
-                      target="_blank"
-                      style="color: #fff"
-                      >Read more</a
-                    >
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- end: Post item-->
-
-            <!-- Post item-->
-            <div class="post-item border">
-              <div class="post-item-wrap">
-                <div class="post-image">
-                  <a href="#">
-                    <img
-                      alt=""
-                      src="{% static 'public/assets/img/blog-cover-03.png' %}"
-                  /></a>
-                </div>
-                <div class="post-item-description">
-                  <span class="post-meta-date"
-                    ><i class="fa fa-calendar-o"></i>Jan 21, 2017</span
-                  >
-                  <h2><a href="#">Virtual Morality</a></h2>
-                  <p>
-                    Santa Clara Magazine features Sisu VR as an ethical approach
-                    to compliance training.
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-rounded btn-sisu-primary"
-                  >
-                    <a
-                      href="https://magazine.scu.edu/magazines/spring-2020/virtual-morality/"
-                      target="_blank"
-                      style="color: #fff"
-                      >Read more</a
-                    >
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- end: Post item-->
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- Cookies -->
