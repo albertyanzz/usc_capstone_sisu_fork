@@ -85,7 +85,7 @@ urlpatterns = [
     path('portal/certificate/', views.portal_certificate, name='certificate'),
     path('portal/change_pwd/', views.portal_change_password, name='portal_pwd'),
     # Training Portal - END
-    re_path('news', views.news_view, name='news'),
+    path('news', views.news_view, name='news'),
 
     # PASSWORD RECOVERY URLS ARE IN users/urls.py
 
