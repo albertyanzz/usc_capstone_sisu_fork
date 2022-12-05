@@ -9,6 +9,20 @@
 
 /* USC code start */
 
+.sisu-vr-articles{
+  color: #9F3688;
+  /*font-family: "Times New Roman";
+  font-size: 1px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin-right: 1px;
+  margin-top: 29px;
+  min-height: 25px;
+  min-width:195px;
+  white-space: nowrap;*/
+}
+
 .row-wrapper {
   display: flex;
   flex-direction: row;
@@ -503,7 +517,15 @@
 #footer .footer-content {
   padding: 42px 0 20px 0;
 }
-
+.new-title{
+    text-align: center; 
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 45px;
+    color: #494949;
+}
 .sisu-hr {
   width: 200px;
   margin-left: auto;
@@ -589,9 +611,19 @@
 }
 
 @media only screen and (max-width: 991px) {
-  .bg-cube-element {
-    display: none;
-  }
+    .bg-cube-element {
+      display: none;
+    }
+    
+    .new-title{
+        text-align: center; 
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 45px;
+        color: #9F3688;
+    }
 }
 
 .center-block {
