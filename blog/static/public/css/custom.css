@@ -9,6 +9,30 @@
 
 /* USC code start */
 
+.row-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.row-wrapper-alt {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .row-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .row-wrapper-alt {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .sisu-menu-link-dropdown {
   position: relative;
   display: inline-block;
@@ -68,13 +92,23 @@
   width: 28rem;
   text-align: center;
   border-radius: 10%;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.sisu-card-body {
+  height: auto !important;
 }
 
 .center-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.row-center-container {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
 }
 
 .module-link-box {
@@ -84,17 +118,43 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 1000px !important;
+  width: 100% !important;
   margin-bottom: 30px;
 }
 
+@media (max-width: 900px) {
+  .module-link-box {
+    color: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+
+  .module-num {
+    width: 100% !important;
+  }
+
+  .module-link {
+    margin-top: 5px;
+    margin-left: 0% !important;
+    font-weight: 500;
+    width: 100% !important;
+    color: inherit;
+  }
+}
+
 .module-num {
-  width: 150px;
+  width: 15%;
 }
 
 .module-link {
   font-weight: 500;
-  margin-left: 100px;
+  margin-left: 10%;
+  width: 75%;
   color: inherit;
 }
 
@@ -102,6 +162,7 @@
   position: relative;
   padding: 10px;
   font-size: 18px;
+  margin-left: 30px;
 }
 
 .sisu-li li::marker {
@@ -790,12 +851,12 @@
 
 /* Position the "prev button" to the right */
 .prev {
-  left: -8%;
+  left: 0%;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: -8%;
+  right: 0%;
 }
 
 /* On hover, add a black background color with a little bit see-through */
