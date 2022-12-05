@@ -6,8 +6,8 @@ from django.contrib.auth import views as auth_views
 #from .views import IndexView
 
 urlpatterns = [
-    ##re_path('', views.index, name='index' ),
-    # # url(r'^$', views.about_sisu, name='about'),
+    #re_path('', views.index, name='index' ),
+    # url(r'^$', views.about_sisu, name='about'),
     
     re_path('about-us/', views.about_us, name='about-us'),
 
@@ -36,7 +36,7 @@ urlpatterns = [
     # #url(r'^settings/user_id(?P<pk>\d+)/$', IndexView.as_view(), name='user_details'),
 
     # re_path('sisu_case/category/', views.get_all_category, name='get_all_category'),
-    # re_path('enp_login/', views.login_portal, name='login_portal'),
+    #re_path('enp_login/', views.login_portal, name='login_portal'),
     # re_path('employee_progress/', views.employee_progress, name='employee_progress'),
     # re_path('supervisor_progress/', views.supervisor_progress, name='supervisorprogress'),
     # re_path('nonsupervisor_progress/', views.nonsupervisor_progress, name='nonsupervisorprogress'),
@@ -56,7 +56,7 @@ urlpatterns = [
 
     # PUBLIC SITE - START
     re_path('faq', views.faq, name='faq'),
-    re_path('contact', views.contact, name='contact'),
+    re_path('contact', views.login_portal, name='contact'),
     # PUBLIC SITE - END
     
     # # Training Portal Authentication / Login / Logout - START

@@ -197,9 +197,20 @@
     }
 
 @media only screen and (max-width: 991px) {
-    .bg-cube-element {
+/*    .bg-cube-element {
         display: none;
-    }
+    }*/
+    .new-title{
+    text-align: center; 
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 45px;
+    color: #9F3688;
+}
+
+
 }
 
 

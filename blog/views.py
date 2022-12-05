@@ -99,7 +99,7 @@ def login_portal(request):
         print('error')
 
     context = {}
-    return render(request, 'blog/login_portal.html', context)
+    return render(request, 'auth/login.html', context)
     # return redirect('portal/home.html')
 
 

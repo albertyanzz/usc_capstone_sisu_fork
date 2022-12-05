@@ -55,6 +55,8 @@
         <section>
             <div class="container">
                 <div class="sisu-divider-line text-center">
+
+
                     <div class="bg-cube-container" style="margin-left:-124px">
                         <div class="bg-cube-element" style="width:34px; height:22px;"></div>
                     </div>
@@ -75,6 +77,8 @@
           
                 <div class="row">
 
+
+
                     {% if latest_medium_post_list %}
                         {% for posts in latest_medium_post_list %}
 
@@ -82,10 +86,9 @@
 
 
                                 <div class="rectangle-148">
-                                    <img src={{posts.m_photo}} class="rectangle-172" alt="Group headshot of Sisu's founding team: Jia Seow, Sean Rossi, Scully Liu, and Jocelyn Tan)"
-                                    style="width:253px; height:258px;">
+                                    <img src={{posts.m_photo}} class="medium-img" alt="Group headshot of Sisu's founding team: Jia Seow, Sean Rossi, Scully Liu, and Jocelyn Tan)">
 
-
+                                    
                                     <p class="second-text-12345678"> {{posts.title_m}} </p>
                                     
 
@@ -181,8 +184,11 @@
 
                         {% for post in latest_linked_in_post_list %}
                              <div class="col-lg-4">
-                                <iframe src={{post.url}} height="{{post.height}}" width="{{post.width}}" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                                <iframe class="shadow" src={{post.url}} height="{{post.height}}" width="{{post.width}}" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
                             </div>    
+
+
+                            <hr class="mobile-space">
                         {% endfor %}
 
                         {% else %}
@@ -195,7 +201,103 @@
 
                     
                 </div>
+        
         </section>
+
+
+        <section class="mobile-footer">
+            <div class="container">
+                <div class="sisu-divider-line text-center">
+                    <div class="bg-cube-container" style="float: right; margin-right: -48px;">
+                        <div class="bg-cube-element" style="width:56px; height:36px; margin-top:4%"></div>
+                    </div>
+                    <div class="bg-cube-container" style="margin-left:-84px">
+                        <div class="bg-cube-element" style="width:34px; height:26px; margin-top:0%"></div>
+                    </div>
+                    <div style="padding-bottom: 20px;">
+                        <span class="lead">Follow us and stay in the loop </span>
+                    </div>
+
+                    <hr class="mobile-space">
+
+
+                    <div class="row">
+
+                             <div class="col-lg-4">
+                                <div class="mobile-container">
+
+                                    <img class="mobile-image" src="{% static 'public/assets/facebook-logo.png' %}" class="rectangle-172" alt="facebook logo"
+                                    style="width:20px; height:50px;">
+                                    <p class="mobile-text"> Facebook.com/Sisuvr </p>
+
+                                </div>
+
+
+                                <div class="col-lg-4">
+
+                                    <hr class="mobile-space">
+
+
+                                    <div class="mobile-container">
+
+                                        <img class="mobile-image-twitter" src="{% static 'public/assets/twitter-logo.png' %}" class="rectangle-172" alt="facebook logo"
+                                        style="width:20px; height:50px;">
+                                        <p class="mobile-text-twitter"> Twitter.com/Sisuvr </p>
+
+                                    </div>
+
+
+                                </div>    
+
+
+
+                                <div class="col-lg-4">
+
+                                    <hr class="mobile-space">
+
+
+                                    <div class="mobile-container">
+
+                                        <img class="mobile-image-twitter" src="{% static 'public/assets/linkedin-logo.png' %}" class="rectangle-172" alt="facebook logo"
+                                        style="width:20px; height:50px;">
+                                        <p class="mobile-text-twitter"> Linkedin.com/Sisuvr </p>
+
+
+
+                                    </div>
+
+
+                                </div>   
+
+
+                                <div class="col-lg-4">
+
+                                    <hr class="mobile-space">
+
+
+                                    <div class="mobile-container">
+
+                                        <img class="mobile-image-twitter" src="{% static 'public/assets/medium-logo.png' %}" class="rectangle-172" alt="facebook logo"
+                                        style="width:20px; height:50px;">
+                                        <p class="mobile-text-twitter"> Medium.com/Sisuvr </p>
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+
+
+                            <hr class="mobile-space">                       
+                    </div>
+
+
+
+        </section>
+
         <!-- end: Content -->
 
         <footer id="footer" class="sisu-footer-bg">
