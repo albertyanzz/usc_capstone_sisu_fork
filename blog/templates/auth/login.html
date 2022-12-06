@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 {% load static %}
 {% load socialaccount %}
 
@@ -33,24 +36,23 @@
 
 	 <div class="body-inner">
 	 	<header id="header" data-fullwidth="true" data-responsive-fixed="true" class="header-fixed">
-            <div class="header-inner sisu-header-bkg">
+			<div class="header-inner sisu-header-bkg">
                 <div class="container">
-                    <!--Logo-->
-                    <div id="logo">
-                        <img src="{% static 'public/assets/svg/logo-text-light.svg' %}">
-                        <a href="{% url 'home' %}"></a>
-                    </div>
-                    <!--End: Logo-->
-                    <!--Navigation Resposnive Trigger-->
-                    <div id="mainMenu-trigger">
-                        <a class="lines-button x"><span class="lines"></span></a>
-                    </div>
-                    <!--end: Navigation Resposnive Trigger-->
-                    <!--Navigation-->
-                    {% include 'components/new-nav-bar.html' %}
-                    <!--end: Navigation-->
+                  <!--Logo-->
+                  <a href="{% url 'home' %}" id="logo">
+                    <img src="{% static 'public/assets/svg/logo-text-light.svg' %}" />
+                  </a>
+                  <!--End: Logo-->
+                  <!--Navigation Resposnive Trigger-->
+                  <div id="mainMenu-trigger">
+                    <a class="lines-button x"><span class="lines"></span></a>
+                  </div>
+                  <!--end: Navigation Resposnive Trigger-->
+                  <!--Navigation-->
+                  {% include 'components/new-nav-bar.html' %}
+                  <!--end: Navigation-->
                 </div>
-            </div>
+              </div>
         </header>
 
 
@@ -160,10 +162,16 @@
 
 	{% include 'components/new-footer.html' %}
 
+    <!--Plugins-->
+    <link rel="stylesheet" href="{% static 'public/js/jquery.js' %}" />
+    <script src="{% static 'public/js/jquery.js' %}"></script>
+    <script src="{% static 'public/js/plugins.js' %}"></script>
 
+    <!--Template functions-->
+    <script src="{% static 'public/js/functions.js' %}"></script>
 	</body>
 
 
 
-
+</html>
 
